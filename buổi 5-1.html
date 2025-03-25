@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout dùng Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            width: 100%;
+            overflow: hidden;
+        }
+        .logo {
+            width: 20%;
+            background: rgb(94, 178, 94);
+            float: left;
+            text-align: center;
+            padding: 20px;
+        }
+        .banner {
+            width: 80%;
+            background: rgb(47, 128, 128);
+            float: left;
+            text-align: center;
+            padding: 20px;
+        }
+        .breadcrumb {
+            clear: both;
+            background: rgb(48, 48, 176);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar-left {
+            width: 20%;
+            background: beige;
+            float: left;
+            text-align: center;
+            padding: 40px;
+        }
+        .content {
+            width: 60%;
+            background: lightgray;
+            float: left;
+            text-align: center;
+            padding: 40px;
+        }
+        .sidebar-right {
+            width: 20%;
+            background: beige;
+            float: left;
+            text-align: center;
+            padding: 40px;
+        }
+        .footer {
+            clear: both;
+            background: rgb(212, 72, 72);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">Logo</div>
+        <div class="banner">Banner</div>
+    </div>
+
+    <div class="breadcrumb">Breadcrumb</div>
+
+    <div class="sidebar-left">Left</div>
+    <div class="content">Content</div>
+    <div class="sidebar-right">Right</div>
+
+    <div class="footer">Footer</div>
+
+</body>
+</html>
